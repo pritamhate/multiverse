@@ -6,7 +6,11 @@
         "_variables.scss",
         "_common.scss",
         "_header.scss",
-        "_footer.scss"
+        "_footer.scss",
+        "_signin.scss",
+        "_banner.scss",
+        "_quiz.scss",
+        "_prizes.scss"
     ],
     "names": [],
     "file": "main.css"
