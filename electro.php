@@ -5,7 +5,7 @@
 </div>
 
 <div id="content-mobile">
-    <h1>Mobile</h1>
+    <section class="bannerWrapper" style="background-image: url('assets/images/electro/electro-banner.jpg');"></section>
 </div>
 
 <?php include('footer.php');?>
