@@ -14,4 +14,35 @@
     display: block;
   }
 }
+
+body {
+  background-color: #000000;
+}
+
+.onlyForDesktop {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.onlyForDesktop .desktop-logo {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.onlyForDesktop h2 {
+  color: #ffffff;
+  margin-top: 25px;
+}
 /*# sourceMappingURL=main.css.map */

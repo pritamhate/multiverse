@@ -1,11 +1,8 @@
 <?php include 'header.php' ?>
 
-<div id="content-desktop">
-    <h1>Desktop</h1>
-</div>
-
 <div id="content-mobile">
-    <h1>Mobile</h1>
+    <img src="./assets/images/logo-main.jpg" class="img-fluid" alt="">
 </div>
+<!-- Visible Only On Mobile -->
 
 <?php include 'header.php' ?>
