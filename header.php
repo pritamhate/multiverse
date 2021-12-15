@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/css/main.css">
+
     <title>Sony Multiverse</title>
   </head>
   <body>

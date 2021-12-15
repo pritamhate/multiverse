@@ -1,3 +1,11 @@
 <?php include 'header.php' ?>
-<h1>Hello world!</h1>
+
+<div id="content-desktop">
+    <h1>Desktop</h1>
+</div>
+
+<div id="content-mobile">
+    <h1>Mobile</h1>
+</div>
+
 <?php include 'header.php' ?>
