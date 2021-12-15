@@ -1,0 +1,14 @@
+.signIn {
+    background-image: url(../images/bg-signin.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .signin-logo {
+        max-width: 70%;
+    }
+}

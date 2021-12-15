@@ -57,6 +57,31 @@ body {
   margin-top: 25px;
 }
 
+.signIn {
+  background-image: url(../images/bg-signin.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signIn .signin-logo {
+  max-width: 70%;
+}
+
 .stickyHeader {
   position: fixed;
   top: 0;
