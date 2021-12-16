@@ -16,6 +16,11 @@
         text-align: center;
         text-transform: uppercase;
         text-shadow: 0 2px 10px #f9e3a6;
+        font-size: 55px;
+        font-family: $goodTimes;
+        @include respond-below(xs) {
+            font-size: 30px;
+        }
     }
     .divider {
         width: 100%;
@@ -55,10 +60,15 @@
                 width: 100%;
                 display: flex;
                 align-items: center;
+                @include respond-below(sm) {
+                    font-size: 13px;
+                }
                 @include respond-below(xs) {
                     max-width: 100%;
-                    margin-bottom: 10px;
                     font-size: 14px;
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
                 }
                 .btn-icon {
                     display: inline-block;
@@ -76,10 +86,21 @@
             color: #ffffff;
             font-size: 18px;
             box-shadow: none;
-            border: 1px solid #ffffff;
+            border-color: #ffffff;
             padding: .375rem 3rem .375rem .75rem;
             &:focus {
-                border: 1px solid #ffffff;
+                border-color: #ffffff;
+            }
+            &::-webkit-input-placeholder {
+                /* Edge */
+                color: #ffffff;
+            }
+            &:-ms-input-placeholder {
+                /* Internet Explorer */
+                color: #ffffff;
+            }
+            &::placeholder {
+                color: #ffffff;
             }
         }
     }
@@ -98,4 +119,14 @@
         display: inline-block;
         margin-top: 5px;
     }
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    border-color: #dc3545 !important;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+    border-color: #28a745 !important;
 }
