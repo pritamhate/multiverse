@@ -1,5 +1,5 @@
 
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupWrong">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupWrong">
       Wrong
     </button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupTooclose">
@@ -10,7 +10,7 @@
     </button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupRight">
       Right
-    </button>
+    </button> -->
    
 
     <!-- Modal -->
