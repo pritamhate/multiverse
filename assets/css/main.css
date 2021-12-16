@@ -131,4 +131,10 @@ body {
 .signIn .mobileField {
   position: relative;
 }
+
+.signIn .mobileField .arrow-button {
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
 /*# sourceMappingURL=main.css.map */

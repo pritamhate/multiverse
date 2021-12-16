@@ -10,7 +10,7 @@
             <form>
                 <div class="mb-3 mobileField">
                     <input type="tel" class="form-control" placeholder="Sign up using mobile number" required >
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary arrow-button"><i class="fas fa-arrow-right"></i></button>
                 </div>
                 <div class="mb-3">
                     <input type="password" class="form-control" placeholder="otp" id="otp">
@@ -23,4 +23,4 @@
 </div>
 <!-- Visible Only On Mobile -->
 
-<?php include 'header.php' ?>
+<?php include 'footer.php' ?>
