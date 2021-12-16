@@ -9,6 +9,24 @@
 
 /* colors */
 /*fonts*/
+/*gradient function*/
+.selector-1 {
+  background: #EDAC7D;
+  background: -webkit-gradient(linear, left top, left bottom, from(#31B7D7), to(#EDAC7D));
+  background: linear-gradient(#31B7D7, #EDAC7D);
+}
+
+.selector-2 {
+  background: #E47D7D;
+  background: -webkit-gradient(linear, left top, right top, from(#E47D7D), color-stop(50%, #C195D3), to(#4FB4E8));
+  background: linear-gradient(to right, #E47D7D 0%, #C195D3 50%, #4FB4E8 100%);
+}
+
+.selector-3 {
+  background: #B58234;
+  background: linear-gradient(42deg, #B58234 0%, #D2B545 50%, #D7C04D 50.01%, #FFFFFF 100%);
+}
+
 #content-desktop {
   display: block;
 }

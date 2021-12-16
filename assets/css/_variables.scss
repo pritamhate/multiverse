@@ -1,18 +1,15 @@
 @font-face {
-	font-family: "Good Times Rg";
-	src: url("../fonts/GoodTimesRg-Regular.eot");
-	src: url("../fonts/GoodTimesRg-Regular.eot?#iefix")
-			format("embedded-opentype"),
-		url("../fonts/GoodTimesRg-Regular.woff2") format("woff2"),
-		url("../fonts/GoodTimesRg-Regular.woff") format("woff"),
-		url("../fonts/GoodTimesRg-Regular.ttf") format("truetype"),
-		url("../fonts/GoodTimesRg-Regular.svg#GoodTimesRg-Regular") format("svg");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+    font-family: "Good Times Rg";
+    src: url("../fonts/GoodTimesRg-Regular.eot");
+    src: url("../fonts/GoodTimesRg-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GoodTimesRg-Regular.woff2") format("woff2"), url("../fonts/GoodTimesRg-Regular.woff") format("woff"), url("../fonts/GoodTimesRg-Regular.ttf") format("truetype"), url("../fonts/GoodTimesRg-Regular.svg#GoodTimesRg-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
+
 /* colors */
+
 $electro_blue: #84abe5;
 $dococ_red: #bd3236;
 $goblin_green: #47b444;
@@ -21,3 +18,41 @@ $white: #ffffff;
 /*fonts*/
 
 $goodTimes: "Good Times Rg";
+
+/*gradient function*/
+
+@mixin linear-gradient($direction,
+$color-stops...) {
+    // Direction has been omitted and happens to be a color-stop
+    @if is-direction($direction)==false {
+        $color-stops: $direction, $color-stops;
+        $direction: 180deg;
+    }
+    background: nth(nth($color-stops,
+    1),
+    1);
+    background: -webkit-linear-gradient(legacy-direction($direction),
+    $color-stops);
+    background: linear-gradient($direction,
+    $color-stops);
+}
+
+.selector-1 {
+    @include linear-gradient(#31B7D7,
+    #EDAC7D);
+}
+
+.selector-2 {
+    @include linear-gradient(to right,
+    #E47D7D 0%,
+    #C195D3 50%,
+    #4FB4E8 100%);
+}
+
+.selector-3 {
+    @include linear-gradient(42deg,
+    #B58234 0%,
+    #D2B545 50%,
+    #D7C04D 50.01%,
+    #FFFFFF 100%);
+}
