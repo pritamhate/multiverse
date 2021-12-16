@@ -27,12 +27,17 @@
     <!-- Sticky header -->
 
     <!-- Banner -->
-    <section class="bannerWrapper" style="background-image: url('assets/images/electro/electro-banner.jpg');">
-        <div class="bannerContent electroBannerText text-center">
-            <h2 class="text-uppercase"><span>Welcome to <span>ELECTROverse. </h2>
-            <p class="white">Swing, web, kick, punch - when you're as fast as lightning nothing misses your aim.</p>
-            <p class="electro_blue">And with millions of volts, certainly not Spider-Man.</p>
-            <p class="white">Can you survive his universe and travel <br>to the next? <small>Answer the quiz and taP into the multiverse that exists on your phone.</small></p>
+    <section class="bannerWrapper" style="background-image: url('assets/images/goblin/greengoblin-bg.jpg');">
+        <div class="bannerContent goblinBannerText text-center">
+            <div class="row">
+                <img src="assets/images/goblin/green-goblin.png" class="img-fluid" alt="">
+            </div>
+
+            <h2 class="text-uppercase"><span>Welcome to <span>Goblinverse. </h2>
+            <p class="gobline_green">"MWAHAHAHAHAHAHAHA".</p>
+            <p class="white">That's all you'll hear. Not the thrusters on his silver glider, not the click of his blasters, nothing! Just KABOOM before the Green Goblin gets you. </p>
+            <p class="gobline_green">Can you survive his universe and travel to the next? </p>
+            <p class="white">Answer the quiz and taP into the multiverse that exists on your phone.</small></p>
 
             <a href="#quiz" class="startQuizBtn">START QUIZ</a>
         </div>
@@ -42,7 +47,7 @@
     <!-- Banner -->
 
     <!-- Quiz -->
-    <section class="quizWrapper electro" id="quiz">
+    <section class="quizWrapper goblin" id="quiz">
         <!-- Progressbar -->
         <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -52,61 +57,61 @@
         <div class="quizSlider">
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <h3>WHAT IS ELECTRO'S REAL NAME?</h3>
+                    <h3>HOW MANY DIFFERENT PEOPLE HAVE BEEN THE GREEN GOBLIN IN THE COMICS?</h3>
 
                     <div class="options">
                         <label for="" class="label">
-                            MAXWELL "MAX" DILLON
+                            8
                             <input type="radio" name="one">
                         </label>
 
                         <label for="" class="label">
-                            MITCHELLE "WAX" JOHNSON
+                            2
                             <input type="radio" name="one">
                         </label>
 
                         <label for="" class="label">
-                            MARTIN "MAC" O'CONNOLLY
+                            5
                             <input type="radio" name="one">
                         </label>
                     </div>
                 </div>
                 <div class="item">
-                    <h3>WHEN DID ELECTRO'S CHARACTER FIRST APPEAR IN THE SPIDER-MAN UNIVERSE?</h3>
+                    <h3>HOW DID THE GREEN GOBLIN BECOME EVIL?</h3>
 
                     <div class="options">
                         <label for="" class="label">
-                            1984
+                            SPLIT PERSONALITY THAT DRIVES HIM TO BECOME A SUPERVILLAIN
                             <input type="radio" name="two">
                         </label>
 
                         <label for="" class="label">
-                            1964
+                            ANXIETY THAT DRIVES HIM TO BECOME A SUPERVILLAIN
                             <input type="radio" name="two">
                         </label>
 
                         <label for="" class="label">
-                            1944
+                            GREED THAT DRIVES HIM TO BECOME A SUPERVILLAIN
                             <input type="radio" name="two">
                         </label>
                     </div>
                 </div>
                 <div class="item">
-                    <h3>HOW DID ELECTRO GET HIS POWERS?</h3>
+                    <h3>WHAT IS GREEN GOBLIN'S REAL NAME?</h3>
 
                     <div class="options" >
                         <label for="" class="label">
-                            FROM A WALL-SOCKET, <br> HOLDING THE TOASTER
+                            NORMAN OSBORN
                             <input type="radio" name="three">
                         </label>
 
                         <label for="" class="label">
-                            A POWERBANK, HOLDING<br> A USB-C WIRE
+                            NORMAN OSCORP
                             <input type="radio" name="three">
                         </label>
 
                         <label for="" class="label">
-                            STRUCK BY LIGHTHNING WHILE HOLDING LIVE, HIGH-TENTION WIRES
+                            NAMAN OSBORN
                             <input type="radio" name="three">
                         </label>
                     </div>
@@ -119,16 +124,18 @@
     <!-- Quiz -->
 
     <!-- Prizes -->
-    <section class="prizesWrapper electro" id="prizes">
+    <section class="prizesWrapper goblin" id="prizes">
         <a href="#prizes" class="prizesBtn">PRIZES</a>
 
         <div class="thunder"></div>
         <div class="prizesContent text-center">
             <h2>Travel to all 3 universes and stand a chance to win </h2>
-            <img src="assets/images/electro/electro-prises.png" class="img-fluid" alt="">
+            <img src="assets/images/goblin/goblin-prises.png" class="img-fluid" alt="">
             <p>Tickets to Spider-Man : No Way Home    and amazing merchandise!</p>
 
             <a href="#">T&C*</a>
+
+            <img src="assets/images/goblin/goblin-bomb.png" class="img-fluid" alt="">
         </div>
     </section>
     <!-- Prizes -->

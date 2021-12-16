@@ -28,19 +28,26 @@
 
 /* colors */
 .stickyHeader {
+  font-family: "Good Times Rg";
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 15px;
+  padding: 5px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  z-index: 10;
 }
 
 .stickyHeader .smallLogo,
 .stickyHeader .hamburger {
   width: 35%;
+}
+
+.stickyHeader .bg-dark {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  padding: 0;
 }
 
 section.bannerWrapper {
@@ -73,6 +80,17 @@ section.bannerWrapper .bannerContent.electroBannerText {
   background-size: 100% 100%;
 }
 
+section.bannerWrapper .bannerContent.goblinBannerText {
+  background-image: url("../images/goblin/green-boglin-gradient.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+}
+
+section.bannerWrapper .bannerContent.goblinBannerText img {
+  padding: 0;
+}
+
 section.bannerWrapper .bannerContent h2 {
   color: #ffffff;
   text-transform: uppercase;
@@ -89,7 +107,7 @@ section.bannerWrapper .bannerContent h2 span {
 
 section.bannerWrapper .bannerContent p {
   font-size: 18px;
-  font-size: 2.9vw;
+  font-size: 2.2vw;
 }
 
 section.bannerWrapper .bannerContent p small {
@@ -103,6 +121,10 @@ section.bannerWrapper .bannerContent p.white {
 
 section.bannerWrapper .bannerContent p.electro_blue {
   color: #84abe5;
+}
+
+section.bannerWrapper .bannerContent p.gobline_green {
+  color: #47b444;
 }
 
 section.bannerWrapper .bannerContent .startQuizBtn {
@@ -169,7 +191,7 @@ section.quizWrapper .quizSlider .options label {
   background-size: contain;
   font-family: "Good Times Rg";
   color: #ffffff;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 section.quizWrapper .quizSlider .options label input {
@@ -189,12 +211,30 @@ section.quizWrapper.electro .quizSlider .options label:hover, section.quizWrappe
   background-image: url(../images/electro/electro-option-selected.png);
 }
 
+section.quizWrapper.goblin .progress .progress-bar {
+  background-color: #529c54;
+}
+
+section.quizWrapper.goblin .quizSlider h3 {
+  color: #47b444;
+}
+
+section.quizWrapper.goblin .quizSlider .options label:hover, section.quizWrapper.goblin .quizSlider .options label:focus {
+  background-image: url(../images/goblin/goblin-option-selected.png);
+}
+
 section.prizesWrapper {
   position: relative;
   width: 100%;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.prizesWrapper.electro {
@@ -220,6 +260,18 @@ section.prizesWrapper.electro .thunder {
   opacity: 0.5;
 }
 
+section.prizesWrapper.goblin {
+  background-image: url(../images/goblin/bg-gobline-prizes.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-top: 50px;
+  background-size: 100%;
+}
+
+section.prizesWrapper.goblin h2 {
+  color: #47b444 !important;
+}
+
 section.prizesWrapper .prizesBtn {
   position: absolute;
   top: -20px;
@@ -234,6 +286,7 @@ section.prizesWrapper .prizesBtn {
   font-family: "Good Times Rg";
   font-style: italic;
   color: #ffffff;
+  z-index: 3;
 }
 
 section.prizesWrapper .prizesContent {
