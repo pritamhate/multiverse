@@ -90,6 +90,72 @@ section.quizWrapper {
 	height: 100vh;
 	height: calc(var(--vh, 1vh) * 100);
 	background-color: #000000;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	.progress {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.quizSlider {
+		width: 90%;
+		margin: 25px auto;
+		text-align: center;
+
+		h3 {
+			font-family: $goodTimes;
+			font-size: 4.5vw;
+		}
+
+		.options {
+			label {
+				display: flex;
+				width: 100%;
+				height: 70px;
+				padding: 0 60px;
+				align-items: center;
+				justify-content: center;
+				background-image: url(../images/radio-bg.png);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: contain;
+				font-family: $goodTimes;
+				color: #ffffff;
+				font-size: 10px;
+
+				input {
+					position: absolute;
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	&.electro {
+		.progress {
+			.progress-bar {
+				background-color: rgb(117, 169, 218);
+			}
+		}
+
+		.quizSlider {
+			h3 {
+				color: $electro_blue;
+			}
+
+			.options {
+				label {
+					&:hover,
+					&:focus {
+						background-image: url(../images/electro/electro-option-selected.png);
+					}
+				}
+			}
+		}
+	}
 }
 
 section.prizesWrapper {

@@ -1,5 +1,8 @@
 <?php include('header.php');?>
 <link rel="stylesheet" href="assets/css/electro.css" >
+<link rel="stylesheet" href="assets/vendor/owl.carousel.min.css" >
+<link rel="stylesheet" href="assets/vendor/owl.theme.default.min.css" >
+
 
 <div id="content-mobile">
     <!-- Banner -->
@@ -18,7 +21,80 @@
     <!-- Banner -->
 
     <!-- Quiz -->
-    <section class="quizWrapper" id="quiz"></section>
+    <section class="quizWrapper electro" id="quiz">
+        <!-- Progressbar -->
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <!-- quiz slider -->
+        <div class="quizSlider">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <h3>WHAT IS ELECTRO'S REAL NAME?</h3>
+
+                    <div class="options">
+                        <label for="" class="label">
+                            MAXWELL "MAX" DILLON
+                            <input type="radio" name="one">
+                        </label>
+
+                        <label for="" class="label">
+                            MITCHELLE "WAX" JOHNSON
+                            <input type="radio" name="one">
+                        </label>
+
+                        <label for="" class="label">
+                            MARTIN "MAC" O'CONNOLLY
+                            <input type="radio" name="one">
+                        </label>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>WHEN DID ELECTRO'S CHARACTER FIRST APPEAR IN THE SPIDER-MAN UNIVERSE?</h3>
+
+                    <div class="options">
+                        <label for="" class="label">
+                            1984
+                            <input type="radio" name="two">
+                        </label>
+
+                        <label for="" class="label">
+                            1964
+                            <input type="radio" name="two">
+                        </label>
+
+                        <label for="" class="label">
+                            1944
+                            <input type="radio" name="two">
+                        </label>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>HOW DID ELECTRO GET HIS POWERS?</h3>
+
+                    <div class="options" >
+                        <label for="" class="label">
+                            FROM A WALL-SOCKET, HOLDING THE TOASTER
+                            <input type="radio" name="three">
+                        </label>
+
+                        <label for="" class="label">
+                            A POWERBANK, HOLDING A USB-C WIRE
+                            <input type="radio" name="three">
+                        </label>
+
+                        <label for="" class="label">
+                            STRUCK BY LIGHTHNING WHILE HOLDING LIVE, HIGH-TENTION WIRES
+                            <input type="radio" name="three">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- quiz slider -->
+
+    </section>
     <!-- Quiz -->
 
     <!-- Prizes -->
@@ -38,3 +114,33 @@
 </div>
 
 <?php include('footer.php');?>
+<script src="assets/vendor/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            loop:false,
+            autoplay: false,
+            margin:10,
+            nav:false,
+            dots: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+
+        var owl = $('.owl-carousel');
+
+        // Go to the next item
+        $('.label').click(function() {
+            owl.trigger('next.owl.carousel');
+        });
+    });
+</script>

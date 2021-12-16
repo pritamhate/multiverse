@@ -123,6 +123,70 @@ section.quizWrapper {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   background-color: #000000;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.quizWrapper .progress {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section.quizWrapper .quizSlider {
+  width: 90%;
+  margin: 25px auto;
+  text-align: center;
+}
+
+section.quizWrapper .quizSlider h3 {
+  font-family: "Good Times Rg";
+  font-size: 4.5vw;
+}
+
+section.quizWrapper .quizSlider .options label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  padding: 0 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/radio-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  font-family: "Good Times Rg";
+  color: #ffffff;
+  font-size: 10px;
+}
+
+section.quizWrapper .quizSlider .options label input {
+  position: absolute;
+  opacity: 0;
+}
+
+section.quizWrapper.electro .progress .progress-bar {
+  background-color: #75a9da;
+}
+
+section.quizWrapper.electro .quizSlider h3 {
+  color: #84abe5;
+}
+
+section.quizWrapper.electro .quizSlider .options label:hover, section.quizWrapper.electro .quizSlider .options label:focus {
+  background-image: url(../images/electro/electro-option-selected.png);
 }
 
 section.prizesWrapper {
