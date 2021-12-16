@@ -1,5 +1,5 @@
 <?php include('header.php');?>
-<link rel="stylesheet" href="assets/css/goblin.css" >
+<link rel="stylesheet" href="assets/css/docock.css" >
 <link rel="stylesheet" href="assets/vendor/owl.carousel.min.css" >
 <link rel="stylesheet" href="assets/vendor/owl.theme.default.min.css" >
 
@@ -27,17 +27,16 @@
     <!-- Sticky header -->
 
     <!-- Banner -->
-    <section class="bannerWrapper" style="background-image: url('assets/images/goblin/greengoblin-bg.jpg');">
-        <div class="bannerContent goblinBannerText text-center">
+    <section class="bannerWrapper">
+        <div class="bannerContent docockBannerText text-center">
             <div class="row">
-                <img src="assets/images/goblin/green-goblin.png" class="img-fluid" alt="">
+                <img src="assets/images/docock/docock.png" class="img-fluid" alt="">
             </div>
 
-            <h2 class="text-uppercase"><span>Welcome to <span>Goblinverse. </h2>
-            <p class="gobline_green">"MWAHAHAHAHAHAHAHA".</p>
-            <p class="white">That's all you'll hear. Not the thrusters on his silver glider, not the click of his blasters, nothing! Just KABOOM before the Green Goblin gets you. </p>
-            <p class="gobline_green">Can you survive his universe and travel to the next? </p>
-            <p class="white">Answer the quiz and taP into the multiverse that exists on your phone.</small></p>
+            <h2 class="text-uppercase"><span>Welcome to <span>OCTOVERSE. </h2>
+            <p class="white">What do you get when you take a mad genius with an interest in robotics and put HIM in another universe ? </p>
+            <p class="dococ_red">One Spidey in trouble. </p>
+            <p class="white">Can you survive his universe and travel <br>to the next? <small>Answer the quiz and taP into the multiverse that exists on your phone.</small></p>
 
             <a href="#quiz" class="startQuizBtn">START QUIZ</a>
         </div>
@@ -47,7 +46,7 @@
     <!-- Banner -->
 
     <!-- Quiz -->
-    <section class="quizWrapper goblin" id="quiz">
+    <section class="quizWrapper docock" id="quiz">
         <!-- Progressbar -->
         <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -57,61 +56,61 @@
         <div class="quizSlider">
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <h3>HOW MANY DIFFERENT PEOPLE HAVE BEEN THE GREEN GOBLIN IN THE COMICS?</h3>
+                    <h3>IN WHICH MOVIE DID DR. OCK FIRST APPEAR?</h3>
 
                     <div class="options">
                         <label for="" class="label">
-                            8
+                            SPIDER-MAN: FAR FROM HOME
                             <input type="radio" name="one">
                         </label>
 
                         <label for="" class="label">
-                            2
+                            SPIDER-MAN 3
                             <input type="radio" name="one">
                         </label>
 
                         <label for="" class="label">
-                            5
+                            SPIDER-MAN 2
                             <input type="radio" name="one">
                         </label>
                     </div>
                 </div>
                 <div class="item">
-                    <h3>HOW DID THE GREEN GOBLIN BECOME EVIL?</h3>
+                    <h3>HOW DID DR. OCK GET HIS POWERS?</h3>
 
                     <div class="options">
                         <label for="" class="label">
-                            SPLIT PERSONALITY THAT DRIVES HIM TO BECOME A SUPERVILLAIN
+                            BIO-MECHANICAL SURGERY
                             <input type="radio" name="two">
                         </label>
 
                         <label for="" class="label">
-                            ANXIETY THAT DRIVES HIM TO BECOME A SUPERVILLAIN
+                            RADIATION LEAK EXPLOSION THAT MERGED THE APPARATUS WITH HIS BODY
                             <input type="radio" name="two">
                         </label>
 
                         <label for="" class="label">
-                            GREED THAT DRIVES HIM TO BECOME A SUPERVILLAIN
+                            BIOHAZARD LEAK MELTING THE ARMS TO HIS BACK
                             <input type="radio" name="two">
                         </label>
                     </div>
                 </div>
                 <div class="item">
-                    <h3>WHAT IS GREEN GOBLIN'S REAL NAME?</h3>
+                    <h3>WHP PLAY'S DR. OCK?</h3>
 
                     <div class="options" >
                         <label for="" class="label">
-                            NORMAN OSBORN
+                            ALPINE MORIARTY
                             <input type="radio" name="three">
                         </label>
 
                         <label for="" class="label">
-                            NORMAN OSCORP
+                            ALPHONSO MARTINA
                             <input type="radio" name="three">
                         </label>
 
                         <label for="" class="label">
-                            NAMAN OSBORN
+                            ALFRED MOLINA
                             <input type="radio" name="three">
                         </label>
                     </div>
@@ -130,12 +129,14 @@
         <div class="thunder"></div>
         <div class="prizesContent text-center">
             <h2>Travel to all 3 universes and stand a chance to win </h2>
-            <img src="assets/images/goblin/goblin-prises.png" class="img-fluid" alt="">
+            <img src="assets/images/docock/docock-prises.png" class="img-fluid" alt="">
             <p>Tickets to Spider-Man : No Way Home    and amazing merchandise!</p>
 
             <a href="#">T&C*</a>
-
-            <img src="assets/images/goblin/goblin-bomb.png" class="img-fluid" alt="">
+            
+            <div class="row">
+                <img src="assets/images/docock/docock-hand.png" class="img-fluid" alt="">
+            </div>
         </div>
     </section>
     <!-- Prizes -->
