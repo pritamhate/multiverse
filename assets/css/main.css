@@ -158,6 +158,12 @@ body {
   max-width: 70%;
 }
 
+@media (max-width: 576px) {
+  .signIn .signInForm {
+    max-width: 85%;
+  }
+}
+
 .signIn .signInForm .socialLogin {
   width: 100%;
   display: -webkit-box;
@@ -245,6 +251,12 @@ body {
 
 .signIn .signInForm input.form-control::placeholder {
   color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .signIn .signInForm input.form-control {
+    font-size: 15px;
+  }
 }
 
 .signIn .mobileField {

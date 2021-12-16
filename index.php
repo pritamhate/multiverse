@@ -20,7 +20,7 @@
                     <button type="submit" class="btn btn-link text-white arrow-button"><i class="fas fa-arrow-right"></i></button>
                 </div>
                 <div class="col-6 mb-3">
-                    <input type="password" class="form-control" placeholder="otp" id="otp" required>
+                    <input type="password" class="form-control" placeholder="OTP" id="otp" required>
                 </div>
                 <button type="submit" class="btn btn-light rounded-0">Submit</button><br>
                 <a href="#" class="signin-tnc">T&amp;C<sup>*</sup></a>

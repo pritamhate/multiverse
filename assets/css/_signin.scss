@@ -48,6 +48,9 @@
     .signInForm {
         width: 100%;
         max-width: 70%;
+        @include respond-below(xs) {
+            max-width: 85%;
+        }
         .socialLogin {
             width: 100%;
             display: flex;
@@ -101,6 +104,9 @@
             }
             &::placeholder {
                 color: #ffffff;
+            }
+            @include respond-below(xs) {
+                font-size: 15px;
             }
         }
     }
