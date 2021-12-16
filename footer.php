@@ -1,4 +1,4 @@
-    <!-- Button trigger modal -->
+    <!-- Button trigger modal 
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupWrong">
       Wrong
     </button>
@@ -11,6 +11,7 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupRight">
       Right
     </button>
+    -->
 
     <!-- Modal -->
     <div class="versesPop modal fade" id="popupWrong" tabindex="-1" aria-labelledby="popupWrongLabel" aria-hidden="true">
