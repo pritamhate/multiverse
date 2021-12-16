@@ -393,10 +393,11 @@ section.prizesWrapper .prizesContent a {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  background: #273142;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6884b1), to(#273142));
-  background: linear-gradient(#6884b1, #273142);
+  background: #851e20;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3272a), to(#851e20));
+  background: linear-gradient(#a3272a, #851e20);
   border: 1px solid #faf4af;
+  color: #f5e19b;
 }
 
 .versesPop .modal-content .modalTitle h2 {
@@ -404,12 +405,18 @@ section.prizesWrapper .prizesContent a {
   font-size: 24px;
   margin: 0;
   position: relative;
+  background-image: url(../images/popup/dodoc-popup.png);
+  background-size: cover;
 }
 
 @media (max-width: 576px) {
   .versesPop .modal-content .modalTitle h2 {
     font-size: 16px;
   }
+}
+
+.versesPop .modal-content .modalTitle h2 img {
+  visibility: hidden;
 }
 
 .versesPop .modal-content .modalTitle h2 span {
@@ -434,6 +441,10 @@ section.prizesWrapper .prizesContent a {
   .versesPop .modal-content .modalContent p {
     font-size: 15px;
   }
+}
+
+.versesPop .modal-content .modalContent .rightNote {
+  color: #f3f6c4;
 }
 
 .versesPop .btn-close {

@@ -344,23 +344,30 @@ section.prizesWrapper .prizesContent a {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  background: #273142;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6884b1), to(#273142));
-  background: linear-gradient(#6884b1, #273142);
+  background: #b09d63;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ddcb90), to(#b09d63));
+  background: linear-gradient(#ddcb90, #b09d63);
   border: 1px solid #faf4af;
+  color: #002688;
 }
 
 .versesPop .modal-content .modalTitle h2 {
-  color: #faf4af;
+  color: #002688;
   font-size: 24px;
   margin: 0;
   position: relative;
+  background-image: url(../images/popup/electro-popup.png);
+  background-size: cover;
 }
 
 @media (max-width: 576px) {
   .versesPop .modal-content .modalTitle h2 {
     font-size: 16px;
   }
+}
+
+.versesPop .modal-content .modalTitle h2 img {
+  visibility: hidden;
 }
 
 .versesPop .modal-content .modalTitle h2 span {
@@ -385,6 +392,10 @@ section.prizesWrapper .prizesContent a {
   .versesPop .modal-content .modalContent p {
     font-size: 15px;
   }
+}
+
+.versesPop .modal-content .modalContent .rightNote {
+  color: #efe6c2;
 }
 
 .versesPop .btn-close {

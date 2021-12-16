@@ -1,4 +1,4 @@
-    <!-- Button trigger modal 
+
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupWrong">
       Wrong
     </button>
@@ -11,7 +11,7 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupRight">
       Right
     </button>
-    -->
+   
 
     <!-- Modal -->
     <div class="versesPop modal fade" id="popupWrong" tabindex="-1" aria-labelledby="popupWrongLabel" aria-hidden="true">
@@ -25,7 +25,7 @@
           <div class="modal-body text-center text-uppercase">
             <div class="modalTitle">
               <span class="popIco"><i class="fas fa-exclamation"></i></span>
-              <h2><img src="./assets/images/electro/electro-option-selected.png" class="img-fluid" alt=""><span>Something's Wrong!</span></h2>
+              <h2><img src="assets/images/popup/electro-popup.png" class="img-fluid" alt=""><span>Something's Wrong!</span></h2>
             </div>
 
             <div class="modalContent">
@@ -98,7 +98,7 @@
             </div>
 
             <div class="modalContent">
-              <p>Go to the remaining univerces by opening this website on another browser.</p>
+              <p class="rightNote">Go to the remaining univerces by opening this website on another browser.</p>
             </div>
           </div>
         </div>

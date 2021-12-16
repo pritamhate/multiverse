@@ -7,319 +7,330 @@ $dococ_red: #bd3236;
 $goblin_green: #47b444;
 $white: #ffffff;
 .stickyHeader {
-	font-family: $goodTimes;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
-	padding: 5px;
-	grid-template-columns: 1fr 1fr;
-	z-index: 10;
-	.smallLogo,
-	.hamburger {
-		width: 35%;
-	}
-	.bg-dark {
-		background-color: rgba(0, 0, 0, 0.7) !important;
-		padding: 0;
-	}
+    font-family: $goodTimes;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    z-index: 10;
+    .smallLogo,
+    .hamburger {
+        width: 35%;
+    }
+    .bg-dark {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        padding: 0;
+    }
 }
 
 section.bannerWrapper {
-	display: flex;
-	width: 100%;
-	height: 100vh;
-	/* Fallback for browsers that do not support Custom Properties */
-	height: calc(var(--vh, 1vh) * 100);
-	background-color: #000000;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	align-items: flex-end;
-	.bannerContent {
-		width: 100%;
-		padding: 0 15px;
-		font-family: $goodTimes;
-		&.electroBannerText {
-			background-image: url("../images/electro/electro-banner-text-bg.png");
-			background-repeat: no-repeat;
-			background-position: bottom center;
-			background-size: 100% 100%;
-		}
-		&.goblinBannerText {
-			background-image: url("../images/goblin/green-boglin-gradient.png");
-			background-repeat: no-repeat;
-			background-position: bottom center;
-			background-size: 100%;
-			img {
-				padding: 0;
-			}
-		}
-		h2 {
-			color: $white;
-			text-transform: uppercase;
-			font-size: 45px;
-			font-weight: 400;
-			font-style: italic;
-			line-height: 1.3;
-			span {
-				display: block;
-				font-size: 25px;
-			}
-		}
-		p {
-			font-size: 18px;
-			font-size: 2.2vw;
-			small {
-				display: block;
-				font-size: 2.5vw;
-			}
-		}
-		p.white {
-			color: $white;
-		}
-		p.electro_blue {
-			color: $electro_blue;
-		}
-		p.gobline_green {
-			color: $goblin_green;
-		}
-		.startQuizBtn {
-			text-decoration: none;
-			padding: 8px 10px;
-			font-size: 16px;
-			background-color: #162533;
-			border: 1px solid #948433;
-			position: relative;
-			top: 15px;
-			font-family: $goodTimes;
-			font-style: italic;
-			color: $white;
-		}
-	}
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    align-items: flex-end;
+    .bannerContent {
+        width: 100%;
+        padding: 0 15px;
+        font-family: $goodTimes;
+        &.electroBannerText {
+            background-image: url("../images/electro/electro-banner-text-bg.png");
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: 100% 100%;
+        }
+        &.goblinBannerText {
+            background-image: url("../images/goblin/green-boglin-gradient.png");
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: 100%;
+            img {
+                padding: 0;
+            }
+        }
+        h2 {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 45px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 1.3;
+            span {
+                display: block;
+                font-size: 25px;
+            }
+        }
+        p {
+            font-size: 18px;
+            font-size: 2.2vw;
+            small {
+                display: block;
+                font-size: 2.5vw;
+            }
+        }
+        p.white {
+            color: $white;
+        }
+        p.electro_blue {
+            color: $electro_blue;
+        }
+        p.gobline_green {
+            color: $goblin_green;
+        }
+        .startQuizBtn {
+            text-decoration: none;
+            padding: 8px 10px;
+            font-size: 16px;
+            background-color: #162533;
+            border: 1px solid #948433;
+            position: relative;
+            top: 15px;
+            font-family: $goodTimes;
+            font-style: italic;
+            color: $white;
+        }
+    }
 }
 
 section.quizWrapper {
-	width: 100%;
-	height: auto;
-	// height: calc(var(--vh, 1vh) * 100);
-	background-color: #000000;
-	padding: 50px 0;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	.progress {
-		width: 80%;
-		margin: 0 auto 50px;
-	}
-	.quizSlider {
-		width: 90%;
-		margin: 25px auto;
-		text-align: center;
-		h3 {
-			font-family: $goodTimes;
-			font-size: 4.5vw;
-		}
-		.options {
-			label {
-				display: flex;
-				width: 100%;
-				height: 70px;
-				padding: 0 60px;
-				align-items: center;
-				justify-content: center;
-				background-image: url(../images/radio-bg.png);
-				background-repeat: no-repeat;
-				background-position: center center;
-				background-size: contain;
-				font-family: $goodTimes;
-				color: #ffffff;
-				font-size: 9px;
-				input {
-					position: absolute;
-					opacity: 0;
-				}
-			}
-		}
-	}
-	&.electro {
-		.progress {
-			.progress-bar {
-				background-color: rgb(117, 169, 218);
-			}
-		}
-		.quizSlider {
-			h3 {
-				color: $electro_blue;
-			}
-			.options {
-				label {
-					&:hover,
-					&:focus {
-						background-image: url(../images/electro/electro-option-selected.png);
-					}
-				}
-			}
-		}
-	}
-	&.goblin {
-		.progress {
-			.progress-bar {
-				background-color: #529c54;
-			}
-		}
-		.quizSlider {
-			h3 {
-				color: $goblin_green;
-			}
-			.options {
-				label {
-					&:hover,
-					&:focus {
-						background-image: url(../images/goblin/goblin-option-selected.png);
-					}
-				}
-			}
-		}
-	}
+    width: 100%;
+    height: auto;
+    // height: calc(var(--vh, 1vh) * 100);
+    background-color: #000000;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .progress {
+        width: 80%;
+        margin: 0 auto 50px;
+    }
+    .quizSlider {
+        width: 90%;
+        margin: 25px auto;
+        text-align: center;
+        h3 {
+            font-family: $goodTimes;
+            font-size: 4.5vw;
+        }
+        .options {
+            label {
+                display: flex;
+                width: 100%;
+                height: 70px;
+                padding: 0 60px;
+                align-items: center;
+                justify-content: center;
+                background-image: url(../images/radio-bg.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                font-family: $goodTimes;
+                color: #ffffff;
+                font-size: 9px;
+                input {
+                    position: absolute;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    &.electro {
+        .progress {
+            .progress-bar {
+                background-color: rgb(117, 169, 218);
+            }
+        }
+        .quizSlider {
+            h3 {
+                color: $electro_blue;
+            }
+            .options {
+                label {
+                    &:hover,
+                    &:focus {
+                        background-image: url(../images/electro/electro-option-selected.png);
+                    }
+                }
+            }
+        }
+    }
+    &.goblin {
+        .progress {
+            .progress-bar {
+                background-color: #529c54;
+            }
+        }
+        .quizSlider {
+            h3 {
+                color: $goblin_green;
+            }
+            .options {
+                label {
+                    &:hover,
+                    &:focus {
+                        background-image: url(../images/goblin/goblin-option-selected.png);
+                    }
+                }
+            }
+        }
+    }
 }
 
 section.prizesWrapper {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	height: calc(var(--vh, 1vh) * 100);
-	background-color: #000000;
-	display: flex;
-	align-items: center;
-	&.electro {
-		background-image: url(../images/electro/bg-electro-prize-gradient.png);
-		background-repeat: no-repeat;
-		background-size: auto;
-		padding-top: 50px;
-		.thunder {
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			width: 100%;
-			height: 100%;
-			background-image: url("../images/electro/prizes-thunder.png");
-			background-repeat: no-repeat;
-			background-position: bottom -25px right;
-			background-size: cover;
-			z-index: 1;
-			opacity: 0.5;
-		}
-	}
-	&.goblin {
-		background-image: url(../images/goblin/bg-gobline-prizes.png);
-		background-repeat: no-repeat;
-		background-size: auto;
-		padding-top: 50px;
-		background-size: 100%;
-		h2 {
-			color: $goblin_green !important;
-		}
-	}
-	.prizesBtn {
-		position: absolute;
-		top: -20px;
-		left: 50%;
-		-webkit-transform: translateX(-50%);
-		-moz-transform: translateX(-50%);
-		transform: translateX(-50%);
-		text-decoration: none;
-		padding: 8px 10px;
-		font-size: 16px;
-		background-color: #162533;
-		border: 1px solid #948433;
-		font-family: $goodTimes;
-		font-style: italic;
-		color: $white;
-		z-index: 3;
-	}
-	.prizesContent {
-		position: relative;
-		width: 100%;
-		padding: 0 15px;
-		font-family: $goodTimes;
-		z-index: 2;
-		h2 {
-			font-size: 3.5vw;
-			font-weight: 400;
-			font-style: italic;
-			line-height: 1.3;
-			margin-bottom: 15px;
-			color: #ffffff;
-		}
-		p {
-			font-size: 2.9vw;
-			color: #ffffff;
-		}
-		img {
-			margin-bottom: 15px;
-		}
-		a {
-			font-size: 2.9vw;
-			color: #ffffff;
-			text-decoration: none;
-		}
-	}
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    &.electro {
+        background-image: url(../images/electro/bg-electro-prize-gradient.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        padding-top: 50px;
+        .thunder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/electro/prizes-thunder.png");
+            background-repeat: no-repeat;
+            background-position: bottom -25px right;
+            background-size: cover;
+            z-index: 1;
+            opacity: 0.5;
+        }
+    }
+    &.goblin {
+        background-image: url(../images/goblin/bg-gobline-prizes.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        padding-top: 50px;
+        background-size: 100%;
+        h2 {
+            color: $goblin_green !important;
+        }
+    }
+    .prizesBtn {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        transform: translateX(-50%);
+        text-decoration: none;
+        padding: 8px 10px;
+        font-size: 16px;
+        background-color: #162533;
+        border: 1px solid #948433;
+        font-family: $goodTimes;
+        font-style: italic;
+        color: $white;
+        z-index: 3;
+    }
+    .prizesContent {
+        position: relative;
+        width: 100%;
+        padding: 0 15px;
+        font-family: $goodTimes;
+        z-index: 2;
+        h2 {
+            font-size: 3.5vw;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        p {
+            font-size: 2.9vw;
+            color: #ffffff;
+        }
+        img {
+            margin-bottom: 15px;
+        }
+        a {
+            font-size: 2.9vw;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
 }
+
 
 /*popup css*/
 
 .versesPop {
-	.modal-content {
-		background-color: #000000;
-		border-color: $electro_blue;
-		.modalTitle {
-			color: $electro_blue;
-			.popIco {
-				display: flex;
-				width: 40px;
-				height: 40px;
-				margin: 0 auto 20px;
-				align-items: center;
-				justify-content: center;
-				border-radius: 50%;
-				@include linear-gradient(#6884b1, #273142);
-				border: 1px solid #faf4af;
-			}
-			h2 {
-				color: #faf4af;
-				font-size: 24px;
-				margin: 0;
-				position: relative;
-				@include respond-below(xs) {
-					font-size: 16px;
-				}
-				span {
-					position: absolute;
-					left: 0;
-					right: 0;
-					top: 50%;
-					transform: translateY(-50%);
-				}
-			}
-		}
-		.modalContent {
-			color: $electro_blue;
-			p {
-				font-size: 20px;
-				margin: 30px 0;
-				@include respond-below(xs) {
-					font-size: 15px;
-				}
-			}
-		}
-	}
-	.btn-close {
-		opacity: 1;
-		background: none;
-		font-size: 20px;
-	}
+    .modal-content {
+        background-color: #000000;
+        border-color: $electro_blue;
+        .modalTitle {
+            color: $electro_blue;
+            .popIco {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                margin: 0 auto 20px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                @include linear-gradient(#ddcb90,
+                #b09d63);
+                border: 1px solid #faf4af;
+                color: #002688;
+            }
+            h2 {
+                color: #002688;
+                font-size: 24px;
+                margin: 0;
+                position: relative;
+                background-image: url(../images/popup/electro-popup.png);
+                background-size: cover;
+                @include respond-below(xs) {
+                    font-size: 16px;
+                }
+                img {
+                    visibility: hidden;
+                }
+                span {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .modalContent {
+            color: $electro_blue;
+            p {
+                font-size: 20px;
+                margin: 30px 0;
+                @include respond-below(xs) {
+                    font-size: 15px;
+                }
+            }
+            .rightNote {
+                color: #efe6c2;
+            }
+        }
+    }
+    .btn-close {
+        opacity: 1;
+        background: none;
+        font-size: 20px;
+    }
 }
