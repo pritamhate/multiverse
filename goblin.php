@@ -48,13 +48,15 @@
 
     <!-- Quiz -->
     <section class="quizWrapper goblin" id="quiz">
-        <!-- Progressbar -->
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
+        
 
         <!-- quiz slider -->
         <div class="quizSlider">
+            <!-- Progressbar -->
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <h3>HOW MANY DIFFERENT PEOPLE HAVE BEEN THE GREEN GOBLIN IN THE COMICS?</h3>

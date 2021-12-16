@@ -47,13 +47,15 @@
 
     <!-- Quiz -->
     <section class="quizWrapper docock" id="quiz">
-        <!-- Progressbar -->
+        
+
+        <!-- quiz slider -->
+        <div class="quizSlider">
+            <!-- Progressbar -->
         <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
 
-        <!-- quiz slider -->
-        <div class="quizSlider">
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <h3>IN WHICH MOVIE DID DR. OCK FIRST APPEAR?</h3>

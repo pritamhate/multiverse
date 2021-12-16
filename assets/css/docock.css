@@ -178,7 +178,7 @@ section.quizWrapper {
 
 section.quizWrapper .progress {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
 section.quizWrapper .quizSlider {
