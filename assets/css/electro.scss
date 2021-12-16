@@ -66,7 +66,30 @@ section.bannerWrapper {
 		p.electro_blue {
 			color: $electro_blue;
 		}
+
+		.startQuizBtn {
+			text-decoration: none;
+			padding: 8px 10px;
+			font-size: 16px;
+
+			background-color: #162533;
+			border: 1px solid #948433;
+			position: relative;
+			top: 15px;
+
+			font-family: $goodTimes;
+			font-style: italic;
+
+			color: $white;
+		}
 	}
+}
+
+section.quizWrapper {
+	width: 100%;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+	background-color: #000000;
 }
 
 section.prizesWrapper {
@@ -97,6 +120,27 @@ section.prizesWrapper {
 			z-index: 1;
 			opacity: 0.5;
 		}
+	}
+
+	.prizesBtn {
+		position: absolute;
+		top: -20px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		transform: translateX(-50%);
+
+		text-decoration: none;
+		padding: 8px 10px;
+		font-size: 16px;
+
+		background-color: #162533;
+		border: 1px solid #948433;
+
+		font-family: $goodTimes;
+		font-style: italic;
+
+		color: $white;
 	}
 
 	.prizesContent {

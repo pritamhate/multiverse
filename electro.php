@@ -9,16 +9,22 @@
             <p class="white">Swing, web, kick, punch - when you're as fast as lightning nothing misses your aim.</p>
             <p class="electro_blue">And with millions of volts, certainly not Spider-Man.</p>
             <p class="white">Can you survive his universe and travel <br>to the next? <small>Answer the quiz and taP into the multiverse that exists on your phone.</small></p>
+
+            <a href="#quiz" class="startQuizBtn">START QUIZ</a>
         </div>
+
+        
     </section>
     <!-- Banner -->
 
     <!-- Quiz -->
-    <section class="quizWrapper"></section>
+    <section class="quizWrapper" id="quiz"></section>
     <!-- Quiz -->
 
     <!-- Prizes -->
-    <section class="prizesWrapper electro">
+    <section class="prizesWrapper electro" id="prizes">
+        <a href="#prizes" class="prizesBtn">PRIZES</a>
+
         <div class="thunder"></div>
         <div class="prizesContent text-center">
             <h2>Travel to all 3 universes and stand a chance to win </h2>
