@@ -153,6 +153,8 @@
             margin:10,
             nav:false,
             dots: false,
+            mouseDrag: false,
+            touchDrag: false,
             responsive:{
                 0:{
                     items:1
@@ -170,7 +172,9 @@
 
         // Go to the next item
         $('.label').click(function() {
-            owl.trigger('next.owl.carousel');
+            setTimeout(function() {
+                owl.trigger('next.owl.carousel');
+            }, 1000);
         });
     });
 </script>
