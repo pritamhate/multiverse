@@ -369,4 +369,77 @@ section.prizesWrapper .prizesContent a {
   color: #ffffff;
   text-decoration: none;
 }
+
+/*popup css*/
+.versesPop .modal-content {
+  background-color: #000000;
+  border-color: #bd3236;
+}
+
+.versesPop .modal-content .modalTitle {
+  color: #bd3236;
+}
+
+.versesPop .modal-content .modalTitle .popIco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: #273142;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6884b1), to(#273142));
+  background: linear-gradient(#6884b1, #273142);
+  border: 1px solid #faf4af;
+}
+
+.versesPop .modal-content .modalTitle h2 {
+  color: #faf4af;
+  font-size: 24px;
+  margin: 0;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .versesPop .modal-content .modalTitle h2 {
+    font-size: 16px;
+  }
+}
+
+.versesPop .modal-content .modalTitle h2 span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.versesPop .modal-content .modalContent {
+  color: #bd3236;
+}
+
+.versesPop .modal-content .modalContent p {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+@media (max-width: 576px) {
+  .versesPop .modal-content .modalContent p {
+    font-size: 15px;
+  }
+}
+
+.versesPop .btn-close {
+  opacity: 1;
+  background: none;
+  font-size: 20px;
+}
 /*# sourceMappingURL=docock.css.map */
