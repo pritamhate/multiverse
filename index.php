@@ -8,8 +8,8 @@
 
         <div class="signInForm">
             <div class="socialLogin">
-                <button type="button" class="btn btn-light"><i class="btn-icon"><img src="./assets/images/ico-google.png" class="img-fluid" alt=""></i>Continue with Google</button>
-                <button type="button" class="btn btn-light"><i class="btn-icon"><img src="./assets/images/ico-google.png" class="img-fluid" alt=""></i>Continue with Facebook</button>
+                <button type="button" class="btn btn-light"><i class="btn-icon"><img src="./assets/images/ico-google.svg" class="img-fluid" alt=""></i>Continue with Google</button>
+                <button type="button" class="btn btn-light"><i class="btn-icon"><img src="./assets/images/ico-fb.svg" class="img-fluid" alt=""></i>Continue with Facebook</button>
             </div>
             <p class="divider">
                 <span>OR</span>

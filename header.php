@@ -24,7 +24,8 @@
           <div class="onlyForDesktop">
             <img src="./assets/images/logo-main.jpg" class="img-fluid desktop-logo" alt="desktop logo">
 
-            <h2>View In Mobile</h2>
+            <h2>THIS EXPERIENCE IS ONLY ON MOBILE DEVICES</h2>
+            <h4>PLEASE VISIT THE WEBSITE FROM YOUR MOBILE</h4>
           </div>
         </div>
       </div>
