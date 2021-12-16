@@ -1,0 +1,69 @@
+/* colors */
+
+$electro_blue: #84abe5;
+$dococ_red: #bd3236;
+$goblin_green: #47b444;
+$white: #ffffff;
+.stickyHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    grid-template-columns: 1fr 1fr;
+    .smallLogo,
+    .hamburger {
+        width: 35%;
+    }
+}
+
+section.bannerWrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    align-items: flex-end;
+    .bannerContent {
+        width: 100%;
+        padding: 0 15px;
+        font-family: $goodTimes;
+        &.electroBannerText {
+            background-image: url("../images/electro/electro-banner-text-bg.png");
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: 100% 100%;
+        }
+        h2 {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 45px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 1.3;
+            span {
+                display: block;
+                font-size: 25px;
+            }
+        }
+        p {
+            font-size: 18px;
+            font-size: 2.9vw;
+            small {
+                display: block;
+                font-size: 2.5vw;
+            }
+        }
+        p.white {
+            color: $white;
+        }
+        p.electro_blue {
+            color: $electro_blue;
+        }
+    }
+}

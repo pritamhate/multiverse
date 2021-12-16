@@ -7,7 +7,6 @@
   font-display: swap;
 }
 
-/* colors */
 /*fonts*/
 /*gradient function*/
 .selector-1 {
@@ -131,83 +130,5 @@ body {
 
 .signIn .mobileField {
   position: relative;
-}
-
-.stickyHeader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 15px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-.stickyHeader .smallLogo,
-.stickyHeader .hamburger {
-  width: 35%;
-}
-
-section.bannerWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-section.bannerWrapper .bannerContent {
-  width: 100%;
-  padding: 0 15px;
-  font-family: "Good Times Rg";
-}
-
-section.bannerWrapper .bannerContent.electroBannerText {
-  background-image: url("../images/electro/electro-banner-text-bg.png");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 100% 100%;
-}
-
-section.bannerWrapper .bannerContent h2 {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.3;
-}
-
-section.bannerWrapper .bannerContent h2 span {
-  display: block;
-  font-size: 25px;
-}
-
-section.bannerWrapper .bannerContent p {
-  font-size: 18px;
-  font-size: 2.9vw;
-}
-
-section.bannerWrapper .bannerContent p small {
-  display: block;
-  font-size: 2.5vw;
-}
-
-section.bannerWrapper .bannerContent p.white {
-  color: #ffffff;
-}
-
-section.bannerWrapper .bannerContent p.electro_blue {
-  color: #84abe5;
 }
 /*# sourceMappingURL=main.css.map */
