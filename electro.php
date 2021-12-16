@@ -1,10 +1,6 @@
 <?php include('header.php');?>
 <link rel="stylesheet" href="assets/css/electro.css" >
 
-<div id="content-desktop">
-    <h1>Desktop</h1>
-</div>
-
 <div id="content-mobile">
     <!-- Banner -->
     <section class="bannerWrapper" style="background-image: url('assets/images/electro/electro-banner.jpg');">
@@ -16,6 +12,10 @@
         </div>
     </section>
     <!-- Banner -->
+
+    <!-- Quiz -->
+    <section class="quizWrapper"></section>
+    <!-- Quiz -->
 
     <!-- Prizes -->
     <section class="prizesWrapper electro">
