@@ -27,79 +27,6 @@
   background: linear-gradient(42deg, #B58234 0%, #D2B545 50%, #D7C04D 50.01%, #FFFFFF 100%);
 }
 
-#content-desktop {
-  display: block;
-}
-
-#content-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  #content-desktop {
-    display: none;
-  }
-  #content-mobile {
-    display: block;
-  }
-}
-
-body {
-  background-color: #000000;
-}
-
-.onlyForDesktop {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.onlyForDesktop .desktop-logo {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-.onlyForDesktop h2 {
-  color: #ffffff;
-  margin-top: 25px;
-}
-
-.signIn {
-  background-image: url(../images/bg-signin.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.signIn .signin-logo {
-  max-width: 70%;
-}
-
 .stickyHeader {
   position: fixed;
   top: 0;
@@ -239,4 +166,4 @@ section.prizesWrapper .prizesContent a {
   color: #ffffff;
   text-decoration: none;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=electro.css.map */

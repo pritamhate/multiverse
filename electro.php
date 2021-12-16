@@ -5,6 +5,8 @@
 </div>
 
 <div id="content-mobile">
+
+    <!-- Banner -->
     <section class="bannerWrapper" style="background-image: url('assets/images/electro/electro-banner.jpg');">
 
         <div class="bannerContent electroBannerText text-center">
@@ -14,6 +16,21 @@
             <p class="white">Can you survive his universe and travel <br>to the next? <small>Answer the quiz and taP into the multiverse that exists on your phone.</small></p>
         </div>
     </section>
+    <!-- Banner -->
+
+
+    <!-- Prizes -->
+    <section class="prizesWrapper electro">
+        <div class="thunder"></div>
+        <div class="prizesContent text-center">
+            <h2>Travel to all 3 universes and stand a chance to win </h2>
+            <img src="assets/images/electro/electro-prises.png" class="img-fluid" alt="">
+            <p>Tickets to Spider-Man : No Way Home    and amazing merchandise!</p>
+
+            <a href="#">T&C*</a>
+        </div>
+    </section>
+    <!-- Prizes -->
 </div>
 
 <?php include('footer.php');?>
